@@ -1,12 +1,56 @@
 <?php
-/*
-echo "Olá Mundo<br>";
+echo "<h1>PHP - Aula 02</h1>";
+echo "<h2>Tipos de Dados</h2>";
 echo "<hr>";
-echo "Estou Aprendendo PHP";
-*/
-//phpinfo();
 
-$nome = "Walter";
-$idade = "18";
-echo $nome . " - " . $idade;
+$nome = "Bruce";
+$idade = 40;
+$altura = 1.78;
+$fumante = false;
+
+echo "Nome: " . $nome;
+echo "<br>";
+echo "Idade: " . $idade;
+echo "<br>";
+echo "Altura: " . $altura;
+echo "<br>";
+echo "Fumante: " . $fumante;
+echo "<br>";
+
+echo $nome . " - " . $idade . " - " . $altura . " - " . $fumante;
+
+echo "<hr>";
+echo gettype($nome) . "<br>";
+echo gettype($idade) . "<br>";
+echo gettype($altura) . "<br>";
+echo gettype($fumante) . "<br>";
+
+echo "<hr>";
+echo "<h2> Operadores Aritméticos</h2>";
+$n1 = 10;
+$n2 = 2; 
+
+echo $n1 + $n2 . "<br>";
+echo $n1 - $n2 . "<br>";
+echo $n1 * $n2 . "<br>";
+echo $n1 / $n2 . "<br>";
+echo $n1 % 2 . "<br>";
+echo $n1 ** 3 . "<br>";
+
+echo "<h2>Operadores Relacionais</h2>";
+
+echo ($n1 > $n2) . "<br>";
+echo ($n1 >= $n2) . "<br>";
+echo ($n1 < $n2) . "<br>";
+echo ($n1 <= $n2) . "<br>";
+echo ($n1 != $n2) . "<br>";
+echo ($n1 == $n2) . "<br>";
+
+
+echo "<h2>Operadores Lógicos</h2>";
+echo (20>10) && (10>15);
+echo "<br>";
+echo (20>10) || (10>15);
+echo "<br>";
+echo !(10 < 5);
 ?>
